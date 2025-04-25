@@ -1,0 +1,10 @@
+    body {
+    background: rgb(20,100,255);
+    
+    }
+    button {
+      border: none;
+      border-radius: 5px;
+      background-color: white;
+      color: black;
+    }

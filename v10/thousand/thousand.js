@@ -13,7 +13,8 @@ var th = {
     canvas: null,
     p: null,
     hour: null,
-
+    color: null,
+    
     canvasdef: function(canvastype) {
         if (canvastype) {
             this.canvas = document.getElementById(canvastype)
@@ -47,5 +48,8 @@ var th = {
         this.p.font = px + " " + font;
         this.p.fillText(textcontent,x,y);
         console.log("esta usando texto");
+    },
+    fill: function(r,g,b) {
+    p.fillStyle = "rgb(" + r + "," + g + "," + b + ");";;
     }
 };

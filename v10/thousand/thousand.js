@@ -50,6 +50,6 @@ var th = {
         console.log("esta usando texto");
     },
     fill: function(r,g,b) {
-    this.color = "rgb(" + r + "," + g + "," + b + ");";;
+    this.color = "rgb(" + r + "," + g + "," + b + ");";
     }
 };

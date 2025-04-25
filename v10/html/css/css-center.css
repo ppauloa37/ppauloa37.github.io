@@ -1,0 +1,13 @@
+      body {
+        background-color: rgb(20,100,255);
+      } a {
+        color: orange;
+        width: 100px;
+      }
+      #explorar {
+      width: 150px;
+      }
+      #perfil {
+      margin-left: 151px;
+      width: 150px;
+      }

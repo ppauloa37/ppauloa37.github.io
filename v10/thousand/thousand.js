@@ -34,7 +34,7 @@ var th = {
         } 
     },
     rect: function(x,y,w,h) {
-        this.p.fillStyle = color;
+        this.p.fillStyle = this.color;
         this.p.fillRect(x,y,w,h);
     },
     getHour: function() {
@@ -44,7 +44,7 @@ var th = {
         vari = number + "thousandtext";
     },
     text: function(textcontent,x,y,font,px) {
-        this.p.fillStyle = color;
+        this.p.fillStyle = this.color;
         this.p.font = px + " " + font;
         this.p.fillText(textcontent,x,y);
         console.log("esta usando texto");

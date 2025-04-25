@@ -33,7 +33,7 @@ var th = {
             console.error("Contexto não encontrado");
         } 
     },
-    rect: function(x,y,w,h,color) {
+    rect: function(x,y,w,h) {
         this.p.fillStyle = color;
         this.p.fillRect(x,y,w,h);
     },
@@ -43,13 +43,13 @@ var th = {
     useThousandtype: function(vari,number) {
         vari = number + "thousandtext";
     },
-    text: function(textcontent,x,y,font,px,color) {
+    text: function(textcontent,x,y,font,px) {
         this.p.fillStyle = color;
         this.p.font = px + " " + font;
         this.p.fillText(textcontent,x,y);
         console.log("esta usando texto");
     },
     fill: function(r,g,b) {
-    p.fillStyle = "rgb(" + r + "," + g + "," + b + ");";;
+    this.color = "rgb(" + r + "," + g + "," + b + ");";;
     }
 };

@@ -13,7 +13,6 @@ var th = {
     canvas: null,
     p: null,
     hour: null,
-    color: null,
     
     canvasdef: function(canvastype) {
         if (canvastype) {
@@ -33,8 +32,8 @@ var th = {
             console.error("Contexto não encontrado");
         } 
     },
-    rect: function(x,y,w,h) {
-        this.p.fillStyle = this.color;
+    rect: function(x,y,w,h,color) {
+        this.p.fillStyle = color;
         this.p.fillRect(x,y,w,h);
     },
     getHour: function() {
@@ -43,8 +42,8 @@ var th = {
     useThousandtype: function(vari,number) {
         vari = number + "thousandtext";
     },
-    text: function(textcontent,x,y,font,px) {
-        this.p.fillStyle = this.color;
+    text: function(textcontent,x,y,font,px,color) {
+        this.p.fillStyle = color;
         this.p.font = px + " " + font;
         this.p.fillText(textcontent,x,y);
         console.log("esta usando texto");
